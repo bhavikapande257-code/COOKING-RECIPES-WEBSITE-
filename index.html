@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BHAVIKA'S COOKING DIARY</title>
+<style>
+        body {
+            background-color: #f1f1ad;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+        .food-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+        }
+        .food-col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 60px;
+            height: 100%;
+            opacity: 0.45;
+            font-size: 36px;
+        }
+        .food-col span:nth-child(odd)  { transform: rotate(-15deg); }
+        .food-col span:nth-child(even) { transform: rotate(15deg); }
+        body > *:not(.food-bg) {
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            color: rgba(88, 6, 6, 0.875);
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        .cooking-image {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 300px;
+            border: 4px solid #580606;
+            border-radius: 8px;
+        }
+        .card {
+            background-color: #fdffe4;
+            border: 4px solid #580606;
+            border-radius: 10px;
+            padding: 16px 24px;
+        }
+        button {
+            background-color: #FFF3B0;
+            border-radius: 10px;
+        }
+    </style>
+<style>
+.site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: rgba(88, 6, 6, 0.95);
+    padding: 14px 18px;
+    margin: -20px -20px 24px -20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.site-nav .nav-title {
+    color: #fff3b0;
+    font-weight: 700;
+    font-size: 20px;
+}
+.site-nav .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.site-nav a {
+    color: white;
+    text-decoration: none;
+    background: rgba(255,255,255,0.14);
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.22);
+    font-weight: 600;
+}
+.site-nav a:hover {
+    background: #fff3b0;
+    color: #580606;
+}
+body {
+    padding-top: 0 !important;
+}
+</style>
+<link href="css/styles.css" rel="stylesheet"/></head>
+<body>
+<nav class="site-nav">
+<div class="nav-title">Bhavika's Cooking Diary</div>
+<div class="nav-links"><a href="index.html">Home</a>
+<a href="alfredo-pasta.html">Alfredo Pasta</a>
+<a href="chicago-pizza.html">Chicago Pizza</a>
+<a href="hamburger.html">Hamburger</a>
+<a href="lotus-biscoff-cheesecake.html">Lotus Biscoff Cheesecake</a>
+<a href="tiramisu.html">Tiramisu</a></div>
+</nav>
+<div class="food-bg">
+<div class="food-col">
+<span>🍕</span><span>🍝</span><span>🎂</span><span>🍰</span><span>🧁</span>
+<span>🍕</span><span>🍝</span><span>🎂</span><span>🍰</span><span>🧁</span>
+</div>
+<div class="food-col">
+<span>🧁</span><span>🍰</span><span>🎂</span><span>🍝</span><span>🍕</span>
+<span>🧁</span><span>🍰</span><span>🎂</span><span>🍝</span><span>🍕</span>
+</div>
+<div class="food-col">
+<span>🎂</span><span>🍕</span><span>🧁</span><span>🍝</span><span>🍰</span>
+<span>🎂</span><span>🍕</span><span>🧁</span><span>🍝</span><span>🍰</span>
+</div>
+<div class="food-col">
+<span>🍝</span><span>🧁</span><span>🍕</span><span>🎂</span><span>🍰</span>
+<span>🍝</span><span>🧁</span><span>🍕</span><span>🎂</span><span>🍰</span>
+</div>
+<div class="food-col">
+<span>🍰</span><span>🎂</span><span>🍝</span><span>🧁</span><span>🍕</span>
+<span>🍰</span><span>🎂</span><span>🍝</span><span>🧁</span><span>🍕</span>
+</div>
+<div class="food-col">
+<span>🍕</span><span>🍰</span><span>🎂</span><span>🧁</span><span>🍝</span>
+<span>🍕</span><span>🍰</span><span>🎂</span><span>🧁</span><span>🍝</span>
+</div>
+<div class="food-col">
+<span>🧁</span><span>🍝</span><span>🍕</span><span>🍰</span><span>🎂</span>
+<span>🧁</span><span>🍝</span><span>🍕</span><span>🍰</span><span>🎂</span>
+</div>
+<div class="food-col">
+<span>🎂</span><span>🍕</span><span>🍰</span><span>🍝</span><span>🧁</span>
+<span>🎂</span><span>🍕</span><span>🍰</span><span>🍝</span><span>🧁</span>
+</div>
+</div>
+<h1><b><i><u>BHAVIKA'S COOKING DIARY</u></i></b></h1>
+<img alt="Cooking" class="cooking-image" src="images/index-1.jpg"/>
+<style>
+.hero-box, .section-box { background:#fdffe4; border:4px solid #580606; border-radius:16px; padding:22px; margin:24px auto; max-width:1100px; }
+.hero-box h2, .section-box h2 { color:#580606; text-align:center; margin-top:0; }
+.recipe-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:18px; margin-top:18px; }
+.recipe-card { background:#fff8cf; border:3px solid #580606; border-radius:16px; padding:18px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.08); }
+.recipe-card h3 { color:#580606; margin-top:0; }
+.recipe-card p { margin-bottom:16px; }
+.recipe-card a { display:inline-block; text-decoration:none; color:white; background:#580606; padding:10px 16px; border-radius:999px; font-weight:700; }
+.info-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:16px; }
+.info-pill { background:#fff8cf; border:3px solid #580606; border-radius:14px; padding:16px; }
+.contact-links { text-align:center; }
+.contact-links p { margin:8px 0; }
+</style>
+<div class="hero-box">
+<h2>Welcome to Bhavika's Cooking Diary</h2>
+<p style="text-align:center; font-size:18px; color:#580606;">This website contains recipe pages for different dishes. Use the navigation bar to open any recipe page.</p>
+<div class="quick-nav">
+<a href="alfredo-pasta.html">Creamy Alfredo Pasta</a>
+<a href="chicago-pizza.html">Chicago Pizza</a>
+<a href="hamburger.html">Hamburger</a>
+<a href="lotus-biscoff-cheesecake.html">Biscoff Cheesecake</a>
+<a href="tiramisu.html">Tiramisu</a>
+</div>
+</div>
+<div class="section-box">
+<h2>Featured Recipes</h2>
+<div class="recipe-grid">
+<div class="recipe-card"><h3>Alfredo Pasta</h3><p>Creamy, cheesy, and quick to make.</p><a href="alfredo-pasta.html">Open Recipe</a></div>
+<div class="recipe-card"><h3>Chicago Pizza</h3><p>A rich deep-dish pizza packed with flavor.</p><a href="chicago-pizza.html">Open Recipe</a></div>
+<div class="recipe-card"><h3>Hamburger</h3><p>Classic burger layers with cheese and sauces.</p><a href="hamburger.html">Open Recipe</a></div>
+<div class="recipe-card"><h3>Lotus Biscoff Cheesecake</h3><p>Sweet, creamy, and perfect for dessert lovers.</p><a href="lotus-biscoff-cheesecake.html">Open Recipe</a></div>
+<div class="recipe-card"><h3>Tiramisu</h3><p>A soft and elegant coffee dessert favorite.</p><a href="tiramisu.html">Open Recipe</a></div>
+</div>
+</div>
+<div class="info-pill"><strong>Simple recipes</strong><br/>Each recipe includes ingredients and preparation steps in a clear format.</div>
+<div class="info-pill"><strong>All-in-one collection</strong><br/>From pasta to desserts, your favorite dishes now live in one website folder.</div>
+
+
+<footer class="site-footer"><p><strong>Author:</strong> Bhavika Pande</p>
+<p>This website is made using only HTML and CSS for the Web Development assignment.</p>
+<p><strong>Repository:</strong> github.com/bhavikapande/recipe-website<br/>
+<strong>Live website:</strong> bhavikapande.github.io/recipe-website</p></footer><section class="assignment-links"><h2>Assignment Reference</h2>
+<p>This submission includes the original assignment PDF and a local reference viewer page.</p>
+<p><a href="reference-view.htm">Open reference-view.htm</a> | <a href="FWD_ASSIGNMENT_3.pdf">Open assignment PDF</a></p>
+</section></body></html>
